@@ -1,0 +1,118 @@
+/* team */
+
+.section-team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    background-color: $background-team;
+}
+
+.team{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+          @media screen and (min-width: 480px) {
+    &{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+}
+}
+
+.team__list{
+    width: 270px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+
+        @media screen and (min-width: 480px) {
+    .team__list, .team__list:not(:last-child){
+         width: 100%;
+         margin: 0;
+        
+    }
+}
+
+.team__text{
+    padding: 30px 0px 30px 0px;
+}
+
+.htext-team{
+    font-style: normal;
+    font-weight: 500;
+    font-size:  $font-size16px;
+    line-height: 19px;
+    margin-top: 0;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $black;
+}
+
+.p-team{
+    font-style: normal;
+    font-weight: normal;
+    font-size:  $font-size16px;
+    line-height: 19px;
+    margin: 0;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $grey2;
+}
+
+.div-icon-team{
+    
+    width: 206px;
+    height: 44px;
+}
+
+.soc-team__href{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff10;
+    border-radius: 50%;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover .soc-team__svg{
+        fill: $white;
+    }
+
+    &:hover{
+        background-color: $blue;
+    }
+}
+
+.soc-team{
+    margin-top: 16px;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    padding: 0 
+}
+
+.soc-team__list:not(:last-child){
+    margin-right: 10px;
+}
+.soc-team__svg{
+    fill: $greylinks;
+    width: 20px;
+    height: 20px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+

@@ -1,0 +1,248 @@
+/* -----------------portfolio----------- */
+
+
+
+.portfolio-section{
+    padding: 94px 0;
+}
+
+.btns{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 0;
+}
+
+.btn-list{
+    
+    list-style: none;
+   
+    &:not(:last-child){
+        margin-right: 8px;
+    }
+}
+
+
+.btn{
+    padding: 6px 22px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size:  $font-size16px;
+    line-height: 26px;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    border-radius: 4px;
+
+    color: $black;
+    background-color: #F5F4FA;
+
+    cursor: pointer;
+    
+    border: none;
+
+    transition-property: background-color, box-shadow, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+        color: $white;
+        background-color: $blue;
+    }
+    
+}
+
+.act2{
+    transition-property: box-shadow, text;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+.btn:hover{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+}
+
+.btn.act2{
+    color: $white;
+    background-color: $blue;
+}
+
+/* img */
+
+.portfolio-img{
+    display: block;
+    text-decoration: none;
+
+    &:hover{
+
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &:hover .product-thumb::before {
+        opacity: 1;
+    }
+    
+    &:hover .portfolio-img-text{
+        opacity: 1;
+    }
+}
+
+.portfolio-test{
+    position: relative;
+
+    &:before{
+        display: inline-block;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.portfolio__list{
+    display: block;
+    width: 370px;
+    position: relative;
+    
+    &:not(:last-child){
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    &:hover .product-thumb::before{
+        transform: translateY(0);
+    }
+    
+    &:hover .portfolio-img-text{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+.test{
+    width: 370px;
+    margin: 0;
+    position: relative;
+    margin-bottom: 30px;
+
+    &:hover .product-thumb::before{
+        transform: translateY(0);
+    
+    }
+    
+    &:hover .portfolio-img-text{
+        opacity: 1;
+        transform: translateY(0);
+    
+    }
+}
+img{
+    display: block;
+}
+
+.img-title{
+    padding: 20px 24px;
+
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+}
+.portfolio-h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+
+    color: $black;
+
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.ptext-portf{
+    font-style: normal;
+    font-weight: normal;
+    font-size:  $font-size16px;
+    line-height: 30px;
+
+    margin: 0;
+
+    color: $grey2;
+}
+
+.portfolio-img-text{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 63px 24px;
+    margin: 0;
+    width: 370px;
+    height: 294px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: $white;
+    opacity: 0;
+
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.product-thumb{
+    position: relative;
+    overflow: hidden;
+
+    &:hover::before{
+        opacity: 1;
+    }
+
+    &:hover .portfolio-img-text{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    &::before{
+        display: inline-block;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: rgba(33, 150, 243, 0.9);
+    
+        opacity: 0;
+       
+        transform: translateY(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+
+
+
+
+
+
+
+

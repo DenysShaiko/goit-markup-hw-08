@@ -1,0 +1,6 @@
+@media screen and (max-width: 480px) {
+  .site-nav, .item {
+    display: none;
+  }
+}
+/*# sourceMappingURL=media.css.map */
